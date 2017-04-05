@@ -1,139 +1,113 @@
+
+/* Page Styles
+================================ */
+
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+.main-wrapper{
+    width: 90%;
+    margin: auto;
+}
+
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
+    box-sizing: border-box;
+}
+/* Layout Element Colors
+================================ */
+
+.main-header       { background-color: #384047; }
+.main-logo         { background-color: #5fcf80; }
+.main-nav li       { background-color: #3f8abf; }
+.primary-content   { background-color: #caebf6; }
+.secondary-content { background-color: #bfe3d0; }
+.main-footer       { background-color: #b7c0c7; }
+
+/* Header, Banner and Footer Layout
+================================ */
+.main-header{
+    padding: 20px;
+    display: table;
+    width: 100%;
+    min-height: 150px;
+    
 }
 
-html{
-  height: 100%;
-  background-color: #171717;
+.main-logo,
+.main-nav{
+    display: table-cell;
+    vertical-align: middle;
 }
 
-body{
-  font: 62.5% Arial, Helvetica, clean, sans-serif;
-  color: #444;
-  min-height: 100%;
+
+.main-logo,.main-nav li{    
+    
+    border-radius: 5px;
 }
 
-#BB-Font {
-  font: 62.5% "Times New Roman", Times, serif;
+.main-logo{
+    
+    width: 120px;
+    text-align: center;
 }
 
-ul{
-  list-style: none;
+
+.main-nav{
+    margin-left: 30px;
+    padding-left: 50px;
 }
 
-li{
-  font-size: 1em;
+.main-nav li{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
 }
 
-a{
-  color: #999999;
+.main-logo a, 
+.main-nav a {
+	color: white;
+	text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+    
 }
 
-.nav-bar{
-  width: 100%;
-  height: 30px;
-  background: #171717;
-  color: #999999;
+p{
+  font-size: 30px;
+  width:90%;
+  display:block;
+  font-weight:bold;
+  margin:auto;
+  text-align:center;
+  padding:20px;
+  
 }
 
-.nav-bar-left{
-  margin: 0;
-  float: left;
-}
+/* Media Queries
+================================ */
 
-.nav-bar-left li{
-  display: inline-block;
-  font-size: 1em;
-}
+@media (max-width:768px){
+    .main-logo,
+    .main-nav,
+    .main-nav li{
+        
+        display: block;
+        width: initial;
+        margin: initial;
+        
+    }
+    
+    .main-nav{
+        padding-left: initial;
+    }
+    
+    .main-nav li{
+        margin-top: 15px;
+    }
 
-.nav-bar-left a{
-  display: block;
-  font-size: 2.4em;
-  letter-spacing: .5em;
-  padding: 0 15px;
-  line-height: 30px;
-}
-
-.nav-bar-right{
-  margin: 0;
-  float: right;
-}
-
-.nav-bar-right li{
-  display: inline-block;
-  font-size: 1em;
-  padding: 7.5px 0;
-}
-
-.nav-bar-right a{
-  display: block;
-  font-size: 1em;
-  line-height: 15px;
-  padding: 0px 10px;
-  border-right: 1px solid #3f3f3f;
-  border-left: 1px solid #171717;
-
-}
-
-.sidebar{
-  position: absolute;
-  width: 250px;
-  top: 40px;
-  bottom: 0px;
-
-  background: #171717;
-  z-index: 1;
-}
-
-.sidebar-top li{
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
-  font-size: 1em;
-  padding: 5px 0;
-}
-
-.sidebar-top a{
-  display: block;
-  font-size: 1.8em;
-  letter-spacing: .2em;
-  line-height: 20px;
-  padding: 0 15px;
-  margin-right: 30px;
-}
-
-.sidebar-fixed{
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 169px;
-
-}
-
-.sidebar-fixed{
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.sidebar-fixed li{
-  margin: 0;
-  font-size: 1em;
-}
-
-.sidebar-fixed a{
-  display: block;
-  padding: 5px 15px;
-  font-size: 1em;
-  color: #5A5A5A;
-  text-transform: none;
-}
-
-.main{
-  padding-left: 169px;
-  background-image: url('http://thefoxisblack.com/blogimages//Virgin+Records+America+virgin_logo1.jpg');
-  width: 100%;
-  height: 1280px;
 }
