@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+html{
+  height: 100%;
+  background-color: #171717;
+}
+
+body{
+  font: 62.5% Arial, Helvetica, clean, sans-serif;
+  color: #444;
+  min-height: 100%;
+}
+
+#BB-Font {
+  font: 62.5% "Times New Roman", Times, serif;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  font-size: 1em;
+}
+
+a{
+  color: #999999;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 30px;
+  background: #171717;
+  color: #999999;
+}
+
+.nav-bar-left{
+  margin: 0;
+  float: left;
+}
+
+.nav-bar-left li{
+  display: inline-block;
+  font-size: 1em;
+}
+
+.nav-bar-left a{
+  display: block;
+  font-size: 2.4em;
+  letter-spacing: .5em;
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+.nav-bar-right{
+  margin: 0;
+  float: right;
+}
+
+.nav-bar-right li{
+  display: inline-block;
+  font-size: 1em;
+  padding: 7.5px 0;
+}
+
+.nav-bar-right a{
+  display: block;
+  font-size: 1em;
+  line-height: 15px;
+  padding: 0px 10px;
+  border-right: 1px solid #3f3f3f;
+  border-left: 1px solid #171717;
+
+}
+
+.sidebar{
+  position: absolute;
+  width: 250px;
+  top: 40px;
+  bottom: 0px;
+
+  background: #171717;
+  z-index: 1;
+}
+
+.sidebar-top li{
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  font-size: 1em;
+  padding: 5px 0;
+}
+
+.sidebar-top a{
+  display: block;
+  font-size: 1.8em;
+  letter-spacing: .2em;
+  line-height: 20px;
+  padding: 0 15px;
+  margin-right: 30px;
+}
+
+.sidebar-fixed{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 169px;
+
+}
+
+.sidebar-fixed{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.sidebar-fixed li{
+  margin: 0;
+  font-size: 1em;
+}
+
+.sidebar-fixed a{
+  display: block;
+  padding: 5px 15px;
+  font-size: 1em;
+  color: #5A5A5A;
+  text-transform: none;
+}
+
+.main{
+  padding-left: 169px;
+  background-image: url('http://thefoxisblack.com/blogimages//Virgin+Records+America+virgin_logo1.jpg');
+  width: 100%;
+  height: 1280px;
+}
