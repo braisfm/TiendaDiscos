@@ -6,7 +6,8 @@ import { NgModule } from '@angular/core';
 // Array con las rutas de este módulo
 const routes: Routes = [
   { path: '', loadChildren: './core/core.module#CoreModule' },
-  { path: 'login', loadChildren: './security/security.module#SecurityModule'}
+  { path: 'login', loadChildren: './security/security.module#SecurityModule'},
+  {path: 'discos', loadChildren:'./discos/discos.module#DiscosModule'}
 ];
 
 @NgModule({

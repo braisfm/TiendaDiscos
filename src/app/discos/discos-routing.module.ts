@@ -2,10 +2,11 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { NgModule } from '@angular/core';
+import {DiscosComponent} from './discos.component'
 
 // Array con las rutas de este módulo
 const routes: Routes = [
-  { path: '', component: LoginComponent }
+  { path: '', component: DiscosComponent }
 ];
 
 @NgModule({
@@ -16,4 +17,4 @@ const routes: Routes = [
     RouterModule // se importará desde el módulo padre, el raíz
   ]
 })
-export class SecurityRoutingModule { }
+export class DiscosRoutingModule { }

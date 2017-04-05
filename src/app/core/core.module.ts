@@ -6,11 +6,13 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { DiscosModule} from '../discos/discos.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    DiscosModule
   ],
   declarations: [HomeComponent, NavigationComponent, DashboardComponent, HeaderComponent]
 })
