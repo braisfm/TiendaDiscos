@@ -2,19 +2,19 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { NgModule } from '@angular/core';
+import {EntradasComponent} from './entradas.component'
 
 // Array con las rutas de este módulo
 const routes: Routes = [
-  { path: '', loadChildren: './core/core.module#CoreModule' },
-  { path: 'login', loadChildren: './security/security.module#SecurityModule'}
+  { path: '', component: EntradasComponent }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes) // configuración para un módulo raiz
+    RouterModule.forChild(routes) // configuración para un módulo raiz
   ],
   exports: [
     RouterModule // se importará desde el módulo padre, el raíz
   ]
 })
-export class AppRoutingModule { }
+export class EntradasRoutingModule { }
